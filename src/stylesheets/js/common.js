@@ -1,0 +1,1 @@
+export const fontTen = { fontSize : "10px"}

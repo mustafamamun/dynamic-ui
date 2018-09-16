@@ -31,40 +31,6 @@ export default class Tabs extends React.Component {
           </NavDropdown>
         </Nav>
       </Navbar>
-      // <Nav>
-      //      <LinkContainer to={{
-      //       pathname: '/admin'
-      //     }}>
-      //       <NavItem>
-      //         <FontAwesome name="cogs"/> admin
-      //       </NavItem>
-      //     </LinkContainer>
-         
-      //     <LinkContainer
-      //       to={{
-      //         pathname: '/dashboard',
-      //       }}
-      //     >
-      //       <NavItem eventKey="dashboard">
-      //         <FontAwesome name="home" />{' '}
-      //         dashboard
-      //       </NavItem>
-      //     </LinkContainer>
-      //     <LinkContainer
-      //       to={{
-      //         pathname: '/cases',
-      //       }}
-      //     >
-      //       <NavItem eventKey="cases">
-      //         <FontAwesome name="ticket" />{' '}
-      //           case browser
-      //       </NavItem>
-      //     </LinkContainer>
-      //   </Nav>
     );
   }
 }
-
-Tabs.contextTypes = {
-  t: PropTypes.func.isRequired,
-};
