@@ -37,12 +37,12 @@ const router = (
         <Route path="cart" component={CartContainer} />
         <Route path="admin" component={AdminContainer} />
         <Route path="dashboard" component={DashboardContainer} />
-        <Route path="cases">
-          <Route path="case">
+        <Route path="item">
+          <Route path="item">
             <Route path=":id" component={DetailsContainer} />
           </Route>
         </Route>
-        <Route path="addcase" component={NewContainer} />
+        <Route path="addItem" component={NewContainer} />
         <Route path="*" component={NotFound} />
       </Route>
     </Router>

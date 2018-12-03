@@ -40,8 +40,7 @@ if (process.env.NODE_ENV !== 'production' && window.devToolsExtension) {
 const persistedReducer = persistReducer(
   {
     key: 'root',
-    storage: storageSession,
-    whitelist: ['form', 'newCaseCategory'],
+    storage: storageSession
   },
   reducers,
 );

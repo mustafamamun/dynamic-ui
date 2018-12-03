@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import Header from './Common/Header'
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../stylesheets/css/font-awesome.min.css'
 import '../stylesheets/css/index.css'
+import { layout, mainPageLayout } from '../stylesheets/js/App';
+
 class App extends Component {
   componentWillMount(){
     this.props.dispatch({ type: 'GET_CATEGORIES' });
@@ -11,9 +13,9 @@ class App extends Component {
   render() {
     const { children } = this.props;
     return (
-      <div>
+      <div style = { mainPageLayout }> 
           <Header  />
-          <div >
+          <div style = { layout } >
               <div >
                 {children}
               </div>
